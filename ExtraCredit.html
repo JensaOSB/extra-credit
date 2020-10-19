@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Fortune</title>
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+    <style>
+        body{
+            @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Sansita+Swashed&display=swap');
+            font-family: 'Libre Baskerville', serif;
+            background-color: white;
+        }
+        
+        #TitleEntry{
+            background-image: url(MFortune.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            position: relative;  
+        }
+        
+        #EntireBox{
+            width: 100%;
+        }
+        
+        .MFTitle{
+            color: white;
+            text-shadow: 2px 2px black;
+            font-size: 20px;
+            padding: 50px 50px;
+            text-align: center;
+            float: right;
+        }
+        
+        #BioDescritpion{
+            width: 50%;
+            margin: 0px 10px;
+        }
+        
+        #BioDescritpion p{
+            font-size: 19px;
+        }
+        
+        #Abilities{
+            padding: 0px 10px;
+            width: 30%;
+        }
+        
+        #Abilities img{
+            padding: 0px 10px;
+            cursor: pointer;
+            width: 90px;
+        }
+        
+        #SkinSlideshow{
+            float: right;
+            width: 50%;
+        }
+        
+        #Videos{
+            width: 50%;
+            float: left;
+        }
+        
+        #Videos iframe{
+            width: 350px;
+            height: 250px;
+            padding: 0px 10px;
+        }
+        
+       /* #TitleEntry hr{
+            width: 500px;
+        }
+      */                
+    </style>
+    
+</head>
+    
+    
+    
+<body>
+    
+<div id ="EntireBox">    
+    <div id = "TitleEntry">
+       <div class = "MFTitle">    
+           <h1>Miss Fortune</h1>
+           <p>The Bounty Hunter</p> 
+           <q>Sure you can handle me, summoner? - Miss Fortune</q> 
+       </div>
+    </div>
+    
+    <div id = "SkinSlideshow">
+        <h2>Skins</h2>
+            <div class = "MFImages">    
+                <img src="Images/Slideshow/MF1.jpg">
+                <img src="Images/Slideshow/MF2.jpg">
+                <img src="Images/Slideshow/MF3.jpg">
+                <img src="Images/Slideshow/MF4.jpg">
+                <img src="Images/Slideshow/MF5.jpg">
+                <img src="Images/Slideshow/MF6.jpg">
+                <img src="Images/Slideshow/MF7.jpg">
+                <img src="Images/Slideshow/MF8.jpg">
+                <img src="Images/Slideshow/MF9.jpg">
+                <img src="Images/Slideshow/MF10.jpg">
+                <img src="Images/Slideshow/MF11.jpg">
+                <img src="Images/Slideshow/MF12.jpg">
+            </div>
+    </div>
+    
+    <div id = "BioDescritpion">
+        <h2>Bio</h2>
+        <p>A Bilgewater captain famed for her looks but feared for her ruthlessness, Sarah Fortune paints a stark figure among the hardened criminals of the port city. As a child, she witnessed the reaver king Gangplank murder her family—an act she brutally avenged years later, blowing up his flagship while he was still aboard. Those who underestimate her will face a beguiling and unpredictable opponent… and, likely, a bullet or two in their guts.</p>
+        <hr>
+    </div>
+    
+    
+    <div id = "Abilities">
+        <h2>Abilities</h2>
+        
+        <div class = "AbilityImages">
+            <img class="A1" src="Images/Love_Tap.png"> 
+            <img class="A2" src="Images/Double_Up.png">
+            <img class="A3" src="Images/Strut.png">
+            <img class="A4" src="Images/Make_It_Rain.png">
+            <img class="A5" src="Images/Bullet_Time.png">
+        </div>
+        <hr>
+    </div>
+    
+    <div id = "Videos">
+        <h2>Videos</h2>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/rIROAUQ-MyE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/c98iNobgbQE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>    
+
+<script src="js/jquery-3.5.1.js"></script>
+    
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+<script>
+    $(document).ready(function(){
+        $('.MFImages').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            infinite: true,
+            cssEase: 'linear'
+        });
+        
+        $('.AbilityImages').click({
+            html('<img src ="MF1.jpg">')
+        });
+    });
+    
+</script>    
+
+    
+</body>
+
+</html>
+
